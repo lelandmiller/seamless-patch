@@ -1,0 +1,27 @@
+{
+  "name": "seamless-patch",
+  "version": "0.0.0",
+  "description": "JSON Patch library for use with seamless-immutable objects",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lelandmiller/seamless-patch.git"
+  },
+  "keywords": [
+    "seamless-immutable",
+    "patch",
+    "json"
+  ],
+  "author": "Leland Miller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lelandmiller/seamless-patch/issues"
+  },
+  "homepage": "https://github.com/lelandmiller/seamless-patch#readme"
+}
