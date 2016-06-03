@@ -1,0 +1,10 @@
+{
+  "name": "seamless-patch",
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "registry:npm/tape#4.0.0+20160322235547"
+  },
+  "globalDevDependencies": {
+    "node": "registry:dt/node#6.0.0+20160602155235"
+  }
+}

@@ -2,12 +2,15 @@
   "name": "seamless-patch",
   "version": "0.0.0",
   "description": "JSON Patch library for use with seamless-immutable objects",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape -r ts-node/register 'tests/**/*.ts'",
+    "install": "typings install",
+    "build": "rimraf dist && tsc -p ./tsconfig.build.json"
   },
   "repository": {
     "type": "git",
@@ -23,5 +26,12 @@
   "bugs": {
     "url": "https://github.com/lelandmiller/seamless-patch/issues"
   },
-  "homepage": "https://github.com/lelandmiller/seamless-patch#readme"
+  "homepage": "https://github.com/lelandmiller/seamless-patch#readme",
+  "devDependencies": {
+    "tape": "^4.5.1",
+    "ts-node": "^0.7.3",
+    "tslint": "^3.10.2",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4"
+  }
 }
