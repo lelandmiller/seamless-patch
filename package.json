@@ -8,9 +8,15 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "tape -r ts-node/register 'tests/**/*.ts'",
+    "test": "nyc -e .ts --require ts-node/register tape 'tests/**/*.ts'",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "install": "typings install",
     "build": "rimraf dist && tsc -p ./tsconfig.build.json"
+  },
+  "nyc": {
+    "include": [
+      "src/**"
+    ]
   },
   "repository": {
     "type": "git",
@@ -28,6 +34,8 @@
   },
   "homepage": "https://github.com/lelandmiller/seamless-patch#readme",
   "devDependencies": {
+    "coveralls": "^2.11.9",
+    "nyc": "^6.4.4",
     "tape": "^4.5.1",
     "ts-node": "^0.7.3",
     "tslint": "^3.10.2",
