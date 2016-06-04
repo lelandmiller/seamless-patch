@@ -4,19 +4,11 @@
   "description": "JSON Patch library for use with seamless-immutable objects",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
-    "test": "nyc -e .ts --require ts-node/register tape 'tests/**/*.ts'",
+    "test": "nyc -e .ts --require ts-node/register tape 'test/**/*.ts'",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "install": "typings install",
     "build": "rimraf dist && tsc -p ./tsconfig.build.json"
-  },
-  "nyc": {
-    "include": [
-      "src/**"
-    ]
   },
   "repository": {
     "type": "git",
