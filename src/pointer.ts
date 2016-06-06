@@ -1,8 +1,8 @@
 export function parse(pointer: string): [Error, string[]] {
-    const err = pointer.length > 0 && pointer.charAt(0) !== '/'
-        ? new Error('invalid pointer syntax')
-        : null;
-    return [err, pointer.split('/').slice(1).map(unescape)];
+    if (pointer.length > 0 && pointer.charAt(0) !== '/') {
+        return [new Error('invalid pointer syntax'), null];
+    }
+    return [null, pointer.split('/').slice(1).map(unescape)];
 }
 
 const escape1 = /~0/g;
