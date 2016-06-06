@@ -1,3 +1,1 @@
-export function patch(o: Object) {
-
-}
+export {parse} from './pointer';
