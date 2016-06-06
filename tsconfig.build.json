@@ -4,6 +4,7 @@
         "module": "commonjs",
         "moduleResolution": "node",
         "outDir": "dist",
+        "rootDir": "src",
         "declaration": true,
         "noImplicitAny": true,
         "noImplicitUseStrict": false,
@@ -16,6 +17,6 @@
         "node_modules",
         "typings/modules",
         "dist",
-        "tests"
+        "test"
     ]
 }
