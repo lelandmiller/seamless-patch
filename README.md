@@ -1,4 +1,4 @@
-# seamless-patch
+# seamless-patch (WIP)
 JSON Patch library for use with seamless-immutable objects
 
 [![Build Status](https://travis-ci.org/lelandmiller/seamless-patch.svg?branch=master)](https://travis-ci.org/lelandmiller/seamless-patch)
